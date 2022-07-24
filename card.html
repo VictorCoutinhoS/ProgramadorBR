@@ -12,33 +12,32 @@
             padding: 0px;
             color: black;
         }
+        body{
+            background-color: black;
+        }
+        #conteudo{
+            text-align: center center;
+        }
 
         #conteiner {
-            background: url(Imagens/backgorund.png) no-repeat center;
-            background-color: white;
+            
         }
 
-        div {
-            text-align: center;
-            position: relative;
-            background-position: center;
-
-        }
-
-        #texto li {
-            padding: 10px;
-            font-size: 30px;
-        }
-
-        .conteiner img {
+        #fundo {
             width: 400px;
             height: 200px;
+        }
 
+        #texto {
+            display: block;
+            position: absolute;
+            top: 10px;
         }
 
         #nome {
             font-family: serif;
             font: bold;
+            font-size: 2rem;
         }
 
         a {
@@ -47,26 +46,34 @@
 
         ul {
             list-style: none;
-            font-size: 20px;
+            font-size: rem;
         }
 
         ul img {
-            width: 35px;
+            width: 20px;
+        }
+        li{
+            padding: 6px;
         }
     </style>
 </head>
 
 <body>
-    <section id="conteiner">
-        <div id="texto">
-            <ul>
-                <li id="nome">Victor Silva</li>
-                <li><img src="Imagens/Insta.png" alt=""><a href="#">/Instagram</a></li>
-                <li><img src="Imagens/Youtube.png" alt=""><a href="#">/Youtube</a></li>
-                <li><img src="Imagens/Twitter.png" alt=""><a href="#">/Twitter</a></li>
-            </ul>
+    <div id="conteudo">
+        <section id="conteiner">
+            <div id="texto">
+                <h1 id="nome">Victor Silva</h1>
+                <ul>
+                    <li><img src="Imagens/Insta.png  " alt=""><a href="#">/Instagram</a></li>
+                    <li><img src="Imagens/Youtube.png" alt=""><a href="#">/Youtube</a></li>
+                    <li><img src="Imagens/Twitter.png" alt=""><a href="#">/Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+        <div>
+            <img id="fundo" src="Imagens/backgorund.png" alt="fundo">
         </div>
-    </section>
+    </div>
 </body>
 
 </html>
